@@ -1,0 +1,39 @@
+h1{
+	font-family: 'Roboto', sans-serif;
+	font-size: 68px;
+}
+p{
+	font-family:'Verdana','Helvetica',sans-serif;
+	font-size:16px;
+	color: #4e4e4e;
+	line-height:30px;
+}
+
+
+#background{
+		background: url(images/me.jpg);
+		background-repeat:no-repeat;
+		background-size:cover;
+    }
+
+#name{
+	
+	width: 1200px;
+	height: 150px;
+	margin: auto;
+	
+	
+}
+header#name h1{
+	padding-top:1%;
+	padding-left:60%;
+}
+
+#intro{
+	width:370px;
+	height:400px;
+	//background-color:white;
+	margin-top:40px;
+	margin-left:140px;
+}
+			
