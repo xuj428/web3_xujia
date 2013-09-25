@@ -30,31 +30,37 @@ ul li.container{
 	display: inline-block;
 	margin:3em 1.5em;
 }
-ul li img{
+.container img{
 	width:100%;
 	height:100%;
 	position: absolute;
 	top:0;
 	left:0;
+	-webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+
 	
    
 }
 
+
 .container img.image{
 	opacity: 1;
+}
+
+.container:hover img.image{
+	opacity:0;
 }
 .container img.change{
 	opacity: 0;
 }
 
-.container:hover img.image{
-	opacity: 0;
-
-};
-
 .container:hover img.change{
 	opacity:1;
 }
+
 
 
 
