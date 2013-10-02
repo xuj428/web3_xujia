@@ -17,7 +17,18 @@ h1{
 	position:relative;
 	margin-left: 70%;
 	padding-top: 5%;
+	transition: all 1000ms ease-in-out;
+  -webkit-transform: translate(230%, 0%);
+  -moz-transition: translate(230%, 0%);
+    -o-transition: translate(230%, 0%);
 }
+#hbird.is-active {
+  -webkit-transform: translate(0, 0);
+  -moz-transition: translate(0,0);
+    -o-transition: translate(0, 0);
+}
+
+
 
 ul li{
 	list-style-type :none
