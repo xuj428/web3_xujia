@@ -24,7 +24,7 @@ h1{
 }
 #hbird.is-active {
   -webkit-transform: translate(0, 0);
-  -moz-transition: translate(0,0);
+  -moz-transition: translate(0, 0);
     -o-transition: translate(0, 0);
 }
 
