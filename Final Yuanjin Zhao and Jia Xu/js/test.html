@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+</head>
+<body>
+<div>
+<img id="imgFlower" src="2.png" />
+<img id="yellow" src="yellow1.png"/>
+<img id="Brassicaceae" src="yellow2.png"/>
+<img id="HeartShapePetal"src="yellow3.png"/>
+<img id="blue" src="blue1.png">
+</div>
+</body>
+</html>
+
+<script type="text/javascript">
+console.log(1);
+
+var bIsBlue=false;
+var bIsYellow=false;
+var bIsBrassicaceae=false;
+var bIsHeartShapePetal=false;
+
+
+var yellowFlower=document.getElementById('yellow');
+yellowFlower.addEventListener('click',function() {
+	 bIsYellow=true;
+	 bIsBlue=false;
+	 console.log(bIsBlue);
+	 console.log('bIsBrassicaceae'+bIsBrassicaceae);
+	 chooseFlower();
+},false)
+
+var blueFlower=document.getElementById('blue');
+blueFlower.addEventListener('click',function(){
+	 bIsYellow=false;
+	 bIsBlue=true;
+	 chooseFlower();
+	 console.log(bIsBlue);
+	 console.log('bIsBrassicaceae'+bIsBrassicaceae);
+},false)
+
+var brassicaceaeFlower=document.getElementById('Brassicaceae');
+brassicaceaeFlower.addEventListener('click',function() {
+	 bIsBrassicaceae=true;
+	 chooseFlower();
+},false)
+
+var HeartShapePetal=document.getElementById('HeartShapePetal');
+HeartShapePetal.addEventListener('click',function() {
+	 bIsHeartShapePetal=true;
+	 chooseFlower();
+},false)
+
+
+function chooseFlower(){
+	if(bIsYellow&&bIsBrassicaceae&&bIsHeartShapePetal){
+	document.getElementById("imgFlower").src="1.png";
+}
+if(bIsBlue&&bIsBrassicaceae&&bIsHeartShapePetal){
+	document.getElementById("imgFlower").src="3.png";
+}
+}
+
+</script>
+
+
