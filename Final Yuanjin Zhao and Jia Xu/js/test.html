@@ -15,11 +15,26 @@
 </html>
 
 <script type="text/javascript">
-console.log(1);
-
+//console.log(1);
+//color
+var bIsYellow=true;
+var bIsPurple=false;
 var bIsBlue=false;
-var bIsYellow=false;
-var bIsBrassicaceae=false;
+var bIsRed=false;
+var bIsOrange=false;
+var bIsPink=false;
+
+//type
+var bIsBrassicaceae=true;
+var bIsAsteraceae=false;
+var bIsApiaceae=false;
+
+//petal
+var bIsSawShapePetal=true;
+var bIsEggShapePetal=false;
+var bIsNeedleShapePetal=false;
+var bIsCurveyShapePetal=false;
+var bIsFatShapePetal=false;
 var bIsHeartShapePetal=false;
 
 
@@ -27,36 +42,163 @@ var yellowFlower=document.getElementById('yellow');
 yellowFlower.addEventListener('click',function() {
 	 bIsYellow=true;
 	 bIsBlue=false;
-	 console.log(bIsBlue);
-	 console.log('bIsBrassicaceae'+bIsBrassicaceae);
+	 bIsPurple=false;
+	 bIsRed=false;
+ 	 bIsOrange=false;
+	 bIsPink=false;
 	 chooseFlower();
 },false)
 
 var blueFlower=document.getElementById('blue');
 blueFlower.addEventListener('click',function(){
-	 bIsYellow=false;
 	 bIsBlue=true;
+	 bIsYellow=false;
+	 bIsPurple=false;
+	 bIsRed=false;
+	 bIsOrange=false;
+	 bIsPink=false;
 	 chooseFlower();
-	 console.log(bIsBlue);
-	 console.log('bIsBrassicaceae'+bIsBrassicaceae);
+	 
+},false)
+
+var purpleFlower=document.getElementById('purple');
+purpleFlower.addEventListener('click',function(){
+	bIsPurple=true;
+	bIsBlue=false;
+	bIsYellow=false;
+	bIsRed=false;
+	bIsOrange=false;
+	bIsPink=false;
+	chooseFlower();
+},false)
+
+var redFlower=document.getElementById('red');
+redFlower.addEventListener('click',function(){
+	bIsPurple=false;
+	bIsBlue=false;
+	bIsYellow=false;
+	bIsRed=true;
+	bIsOrange=false;
+	bIsPink=false;
+	chooseFlower();
+},false)
+
+var orangeFlower=document.getElementById('orange');
+orangeFlower.addEventListener('click',function(){
+	bIsPurple=false;
+	bIsBlue=false;
+	bIsYellow=false;
+	bIsRed=false;
+	bIsOrange=true;
+	bIsPink=false;
+	chooseFlower();
+},false)
+
+var pinkFlower=document.getElementById('pink');
+orangeFlower.addEventListener('click',function(){
+	bIsPurple=false;
+	bIsBlue=false;
+	bIsYellow=false;
+	bIsRed=false;
+	bIsOrange=false;
+	bIsPink=true;
+	chooseFlower();
 },false)
 
 var brassicaceaeFlower=document.getElementById('Brassicaceae');
 brassicaceaeFlower.addEventListener('click',function() {
 	 bIsBrassicaceae=true;
+	 bIsAsteraceae=false;
+	 bIsApiaceae=false;
 	 chooseFlower();
+},false)
+
+var asteraceaeFlower=document.getElementById('Asteraceae');
+asteraceaeFlower.addEventListener('click',function(){
+	bIsBrassicaceae=false;
+	bIsAsteraceae=true;
+	bIsApiaceae=false;
+	chooseFlower();
+},false)
+
+var apiaceaeFlower=document.getElementById('Apiaceae');
+apiaceaeFlower.addEventListener('click',function(){
+	bIsBrassicaceae=false;
+	bIsAsteraceae=false;
+	bIsApiaceae=true;
+	chooseFlower();
 },false)
 
 var HeartShapePetal=document.getElementById('HeartShapePetal');
 HeartShapePetal.addEventListener('click',function() {
 	 bIsHeartShapePetal=true;
+	 bIsSawShapePetal=false;
+	 bIsEggShapePetal=false;
+	 bIsNeedleShapePetal=false;
+	 bIsCurveyShapePetal=false;
+	 bIsFatShapePetal=false;
+	 chooseFlower();
+},false)
+
+var SawShapePetal=document.getElementById('SawShapePetal');
+SawShapePetal.addEventListener('click',function() {
+	 bIsHeartShapePetal=false;
+	 bIsSawShapePetal=true;
+	 bIsEggShapePetal=false;
+	 bIsNeedleShapePetal=false;
+	 bIsCurveyShapePetal=false;
+	 bIsFatShapePetal=false;
+	 chooseFlower();
+},false)
+
+var EggShapePetal=document.getElementById('EggShapePetal');
+EggShapePetal.addEventListener('click',function() {
+	 bIsHeartShapePetal=false;
+	 bIsSawShapePetal=false;
+	 bIsEggShapePetal=true;
+	 bIsNeedleShapePetal=false;
+	 bIsCurveyShapePetal=false;
+	 bIsFatShapePetal=false;
+	 chooseFlower();
+},false)
+
+var NeedleShapePetal=document.getElementById('NeedleShapePetal');
+NeedleShapePetal.addEventListener('click',function() {
+	 bIsHeartShapePetal=false;
+	 bIsSawShapePetal=false;
+	 bIsEggShapePetal=false;
+	 bIsNeedleShapePetal=true;
+	 bIsCurveyShapePetal=false;
+	 bIsFatShapePetal=false;
+	 chooseFlower();
+},false)
+
+var CurveyShapePetal=document.getElementById('CurveyShapePetal');
+CurveyShapePetal.addEventListener('click',function() {
+	 bIsHeartShapePetal=false;
+	 bIsSawShapePetal=false;
+	 bIsEggShapePetal=false;
+	 bIsNeedleShapePetal=false;
+	 bIsCurveyShapePetal=true;
+	 bIsFatShapePetal=false;
+	 chooseFlower();
+},false)
+
+var FatShapePetal=document.getElementById('FatShapePetal');
+FatShapePetal.addEventListener('click',function() {
+	 bIsHeartShapePetal=false;
+	 bIsSawShapePetal=false;
+	 bIsEggShapePetal=false;
+	 bIsNeedleShapePetal=false;
+	 bIsCurveyShapePetal=false;
+	 bIsFatShapePetal=true;
 	 chooseFlower();
 },false)
 
 
 function chooseFlower(){
 	if(bIsYellow&&bIsBrassicaceae&&bIsHeartShapePetal){
-	document.getElementById("imgFlower").src="1.png";
+	document.getElementById("imgFlower").src="http://i.imgur.com/u47CPXK.png";
 }
 if(bIsBlue&&bIsBrassicaceae&&bIsHeartShapePetal){
 	document.getElementById("imgFlower").src="3.png";
